@@ -1,12 +1,10 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 10s linear;
   height: 40vmin;
 }
-
 .App-header {
   background-color: #5f6d87;
   min-height: 100vh;
@@ -17,36 +15,30 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #72f6a3;
   font-family: 'Miniver', cursive;
   font-size: 35px;
 }
-
 .App-link:hover {
   color: #c98de6;
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
-
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
-
 .App-header-two {
   font-family: 'Knewave', cursive;
   font-size: 85px;
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
-
 .App-header-two:pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -55,7 +47,6 @@
     transform: rotate(360deg);
   }
 }
-
 .headerOne {
   font-family: 'Gloria Hallelujah', cursive;
   color: #31aaba;
@@ -63,7 +54,6 @@
   background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
   padding: 12px;
 }
-
 .headerTwo {
   font-family: 'Shadows Into Light', cursive;
   font-size: 65px;
@@ -74,7 +64,6 @@
   /* text-decoration-line: underline; */
   /* text-decoration-style: double; */
 }
-
 .headerThree {
   font-family: 'Shadows Into Light', cursive;
   font-size: 20px;
@@ -83,13 +72,11 @@
   padding: 5px;
   text-decoration: underline;
 }
-
 .headerThree:hover{
   animationIn: headShake;
   animationOut: zoomOutDown;
   isVisible: true
 }
-
 .headerFour {
   font-family: 'Gloria Hallelujah', cursive;
   color: #ff8e53;
@@ -99,12 +86,10 @@
   padding-bottom: 12px;
   margin-bottom: 1px;
 }
-
 .toggle {
   fontVariant: small-caps;
   font-size: 18px;
 }
-
 .petContainer {
   margin-left: -4px;
   margin-bottom: 20px;
@@ -130,30 +115,25 @@
   overflow-wrap: break-word;
   padding-left: 4px;
 }
-
 .petTileh3 {
   font-family: 'Amatic SC', cursive;
   font-size: 55px;
   color: #FBB;
 }
-
 .minPetTile {
   width: 250px;
   height: 250px;
   background-size: cover;
 }
-
 .maxPetTile {
   background-size: cover;
   width: 500px;
   height: 500px;
 }
-
 .petTile:hover {
   /* transform: scale(1.05); */
   transform: skewX(4deg);
 }
-
 .myPetTile {
   display: block;
   background-repeat: no-repeat;
@@ -171,43 +151,36 @@
   overflow-wrap: break-word;
   padding-left: 4px;
 }
-
 .myPetTileh3 {
   font-family: 'Amatic SC', cursive;
   font-size: 55px;
   color: #00e8b0;
 }
-
 .minMyPetTile {
   width: 250px;
   height: 250px;
   background-size: cover;
 }
-
 .maxMyPetTile {
   background-size: cover;
   width: 500px;
   height: 500px;
 }
-
 .myPetTile:hover {
   /* transform: scale(1.05); */
   transform: skewX(-4deg);
 }
-
 .loginDiv {
   margin-top: 105px;
   padding: 12px 13px;
     box-shadow: 0 4px 6px 0px rgba(255, 142, 83, 0.72);
 }
-
 .login {
   margin-top: 25px;
   padding: 12px 13px;
   font-size: 25px;
   font-color: #1c3875
 }
-
 .signupHeader {
   background-color: #591b69;
   background: linear-gradient(45deg, #d5506d 30%, #662378 90%);
@@ -221,7 +194,6 @@
   font-size: 45px;
   box-shadow: 0 6px 10px 6px rgba(255, 142, 83, 0.72);
 }
-
 .signupPlaceholders {
   font-size: 35px;
   font-family: 'Gloria Hallelujah', cursive;
@@ -229,7 +201,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .signupButton {
   background-color: #591b69;
   background: linear-gradient(45deg, #d5506d 30%, #662378 90%);
@@ -248,13 +219,11 @@
   border: 26;
   height: 65px;
 }
-
 .signinDiv {
   margin-top: 105px;
   padding: 12px 13px;
   box-shadow: 0 4px 6px 0px rgba(112, 23, 173, 0.72);
 }
-
 .signinHeader {
   background-color: #FF8E53;
   background: linear-gradient(45deg, #ff6253 30%, #b539b0 90%);
@@ -268,7 +237,6 @@
   font-size: 45px;
   box-shadow: 0 6px 10px 6px rgba(112, 23, 173, 0.72);
 }
-
 .signinPlaceholders {
   font-size: 35px;
   font-family: 'Gloria Hallelujah', cursive;
@@ -276,7 +244,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .signinButton {
   background-color: #FF8E53;
   background: linear-gradient(45deg, #ff6253 30%, #b539b0 90%);
@@ -294,4 +261,25 @@
   border-radius: 20px;
   border: 26;
   height: 65px;
+}
+#adoptedPets {
+  /* vertical-align: right; */
+  text-align: left;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  color: #ff6b00;
+  text-shadow: 1.5px 1.5px #0d8568; ;
+  padding-top: 1px;
+}
+.adoptedPetsButton {
+  /* font-family: 'Gloria Hallelujah', cursive; */
+  color: #c98de6;
+  font-family: 'Miniver', cursive;
+  font-size: 25px;
+}
+.adoptedPetsButton:hover {
+  color: #72f6a3;
+}
+.adopted {
+  font-family: 'Knewave', cursive;
 }
