@@ -3,7 +3,22 @@ import {Link} from "react-router-dom";
 import { Animated } from 'react-animated-css';
 import PetCard from './PetCard';
 
+const apiPetsAddress = 'http://localhost:3000/api/v1/pets'
+
 class PetContainer extends Component {
+
+  componentDidMount = () => {
+    fetch(apiPetsAddress, {
+      method: "GET",
+      headers: {
+        "Authorization":localStorage.getItem('jwt')
+      }
+    })
+    .then(response => response.json())
+    .then(petData => {
+      this.props.setAllPets(petData)
+    })
+  }
 
   handleAdoptedStatus = (userId, petId) => {
     let pet = this.props.pets.find(pet => pet.id === petId)
@@ -69,9 +84,10 @@ class PetContainer extends Component {
     }
     return (
       <div className="ui contianer">
-        <Link to="profile">
-          <p className="headerThree">My Pets</p>
-        </Link>
+        <div>
+          <Link to="profile"> <p className="headerThree">My Pets</p> </Link>
+          <Link to="/" onClick={this.props.logout}>  <p className="headerThree">Logout</p></Link>
+        </div>
         <h1 className="headerOne">Welcome {this.props.currentUser.name}</h1>
         <Animated animationIn="tada" animationOut="flash" isVisible={true}>
           <h1 className="headerTwo"> ♡ Pets! ♡ </h1>

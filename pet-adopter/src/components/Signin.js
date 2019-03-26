@@ -2,14 +2,16 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import ProfileContainer from './ProfileContainer';
 
-const apiUsersAddress = 'http://localhost:3000/api/v1/users'
+const apiUsersAddress = 'http://localhost:3000/api/v1/login'
 
 class Signin extends React.Component {
+
   state = {
-    name: '',
-    email: '',
+    username: '',
+    password: '',
     // myPets: this.props.myPets
   }
+
 
   handleChange = (event) => {
     this.setState({
@@ -19,10 +21,16 @@ class Signin extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    fetch(apiUsersAddress)
+    fetch(apiUsersAddress,{
+      method:"POST",
+      headers: {
+        "Content-Type": 'application/json'
+      },
+      body:JSON.stringify(this.state)
+    })
     .then(response => response.json())
-    .then(userData => {
-      const userObj = userData.find(user => user.name.toLowerCase() === this.state.name.toLowerCase() && user.email === this.state.email)
+    .then(userObj => {
+      localStorage.setItem('jwt', userObj.token)
       const usersAdoptedPets = userObj.pets.filter(pet => pet.owner_id === userObj.id)
       this.props.setCurrentUser(userObj)
       this.props.setMyPets(userObj.matches, usersAdoptedPets)
@@ -38,15 +46,16 @@ class Signin extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <input className="signinPlaceholders"
               onChange={this.handleChange}
-              name="name"
-              value={this.state.name}
-              placeholder="name"
+              name="username"
+              value={this.state.username}
+              placeholder="username"
             />
             <input className="signinPlaceholders"
               onChange={this.handleChange}
-              name="email"
-              value={this.state.email}
-              placeholder="email"
+              name="password"
+              value={this.state.password}
+              placeholder="password"
+              type="password"
             />
             <input
               type="submit"
