@@ -32,13 +32,20 @@ and type “yes” or “y” when asked if you’d like to run this server on a
 
 ## Backend Link
 
-[PetAdopter-backend](https://github.com/ehamiltonhudson/PetAdopter-backend)
+[PetAdopter-backend](https://github.com/gbellini90/PetAdopter)
 
 ## Demo Video
 
 [PetAdopter.mov](https://drive.google.com/open?id=1D7FHcEtkCZXcCac5FGkyiHY7tLE1dS-v)
 
 ## Authors
+
+**Gabrielle  Bellini**
+
+≫ gbellini90@gmail.com<br/>
+↳ *LinkedIn*: https://www.linkedin.com/in/gabrielle-bellini/<br/>
+↳ *GitHub*: https://github.com/gbellini90<br/>
+↳ *Blog*: https://medium.com/@gbellini90
 
 **Hamilton Hudson**
 
@@ -47,13 +54,6 @@ and type “yes” or “y” when asked if you’d like to run this server on a
 ↳ *Website*: https://hamiltonhudson.myportfolio.com<br/>
 ↳ *Blog*: https://ehhudson.wordpress.com<br/>
 ↳ *Twitter*: https://twitter.com/HamiltonHudson
-
-**Gabrielle  Bellini**
-
-≫ gbellini90@gmail.com<br/>
-↳ *LinkedIn*: https://www.linkedin.com/in/gabrielle-bellini/<br/>
-↳ *GitHub*: https://github.com/gbellini90<br/>
-↳ *Blog*: https://medium.com/@gbellini90
 
 ## License
 
